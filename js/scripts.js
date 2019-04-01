@@ -5,5 +5,12 @@ function check() {
     var questionFour = document.Quiz.questionFour.value;
     var questionFive = document.Quiz.questionFive.value;
     var right =0;
-
+    if (questionOne == "correct") {
+        right = right + 20;
     
+
+
+
+    document.getElementById("fifth-p").style.visibility="visible";
+    document.getElementById("correctNumber").innerHTML="HERE IS YOUR SCORE: " + right + "%";
+    }
