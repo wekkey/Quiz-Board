@@ -1,4 +1,3 @@
-function check(){
 function check() {
     var questionOne = document.Quiz.questionOne.value;
     var questionTwo = document.Quiz.questionTwo.value;
@@ -7,46 +6,24 @@ function check() {
     var questionFive = document.Quiz.questionFive.value;
     var right =0;
 
-
-    if(questionOne == "correct"){
-        right= right+20;
-    var right = 0;
-
-
     if (questionOne == "correct") {
         right = right + 20;
     };
     if (questionTwo == "correct"){
         right= right+20;
-    if (questionTwo == "correct") {
-        right = right + 20;
     };
     if (questionThree == "correct"){
-        right= right+20;
-    if (questionThree == "correct") {
-        right = right + 20;
+        right= right+ 20;
     };
     if (questionFour == "correct"){
-        right= right+20;
-    if (questionFour == "correct") {
-        right = right + 20;
+        right= right+ 20;
     };
     if (questionFive == "correct"){
         right= right+20;
-    if (questionFive == "correct") {
-        right = right + 20;
     };
 
 
 
     document.getElementById("fifth-p").style.visibility="visible";
     document.getElementById("correctNumber").innerHTML="HERE IS YOUR SCORE: " + right + "%";
-
-
-
-    document.getElementById("fifth-p").style.visibility = "visible";
-    document.getElementById("correctNumber").innerHTML = "HERE IS YOUR SCORE: " + right + "%";
-    $(".container").fadeOut();
-
-
-};
+}
